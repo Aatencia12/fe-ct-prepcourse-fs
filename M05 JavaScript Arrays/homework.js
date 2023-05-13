@@ -158,12 +158,13 @@ function mesesDelAño(array) {
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
    var arrayN =[];
-   for(var i=0; i<array.length; i++){
+
+   for(var i = 0; i < array.length; i++){
       if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
-         arrayN.push(array[i]);
+         arrayN.push(array[i])
       }
    }
-   if (array.length < 3){
+   if (arrayN.length < 3){ 
 
       return "No se encontraron los meses pedidos";
 
@@ -206,12 +207,12 @@ function breakStatement(num) {
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
    var arrayX =[];
-   var suma = suma;
+   var suma = num;
    for (var i=0; i<10; i++){
       suma = suma + 2;
-      if (suma === i) break;
+      if (suma === i)break;
 
-      else arrayX.push(suma);
+      else arrayX.push(suma)
 
    }
    if (i<10){
@@ -229,10 +230,10 @@ function continueStatement(num) {
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
    var arrayX=[];
-   var suma = suma;
+   var suma = num;
    for(var i = 0; i<10;i++){
       
-      if (i === 5) continue;
+      if (i === 5)continue;
       else {suma = suma+2;
       arrayX.push(suma);}
    } 
